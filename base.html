@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
+    <link rel="shortcut icon" type="image/png/gif/jpg" href="images/icon.gif"/>
+    <title>Tricodia</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+ 
+ <body>
+		<div class="wrap">
+			<div class="left" id="myleft">
+				<h2>Tricodia</h2>
+				<ul class="items">
+					<a href="javascript:void(0)" class="closebtn" onmouseover="closeNav()">×</a>
+					<hr />
+					<li><a href="#">Home</a></li><hr />
+					<li><a href="#about">About</a></li><hr />
+					<li><a href="#explore">Explore Us</a></li><hr />
+					<li><a href="#team">Our Team</a></li><hr />
+					<li><a href="#contact">Contact Us</a></li><hr />
+					<li><a href="#reach">Reach Us</a></li><hr />
+				</ul>
+			</div>
+			<div id="main">
+				<span style="cursor:pointer" onmouseover="openNav()">
+				<img src="images/bar.png" style="height:100%;width:30px;">
+				</span>
+			</div>
+		</div>
+		<script>
+			function openNav() {
+				document.getElementById("myleft").style.width = "250px";
+				document.getElementById("sat").style.marginLeft = "250px";
+				document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+				
+			}
+			function closeNav() {
+				document.getElementById("myleft").style.width = "0";
+				document.getElementById("sat").style.marginLeft= "0";
+				document.body.style.backgroundColor = "white";
+			}
+		</script>
+ </body>
+</html>
